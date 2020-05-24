@@ -6,7 +6,7 @@ console.log("Witaj strudzony przybyszu. Internet to miejsce dziwne, ale wspania�
 
 const hello = (name, age) => {
     console.log(`Mam na imię ${name} i mam ${age} lat, a Ty?`);
-    console.log(`psst, żeby się przywitać wpisz: sayHello("TwojeImię", TwójWiek) i wciśnij enter:)`);
+    return console.log(`psst, żeby się przywitać wpisz: sayHello("TwojeImię", TwójWiek) i wciśnij enter:)`);
 };
 
 let helloKrysia = hello("Krysia", 26)
@@ -14,4 +14,5 @@ let helloKrysia = hello("Krysia", 26)
 
 const sayHello = (name, age) => {
     console.log(`Cześć Krysia, ja mam na imię ${name} i mam ${age} lat!`);
+    
 };
