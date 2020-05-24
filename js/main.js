@@ -16,3 +16,11 @@ const sayHello = (name, age) => {
     console.log(`Cześć Krysia, ja mam na imię ${name} i mam ${age} lat!`);
     
 };
+
+
+const hamburger = document.querySelector('.hamburger--js')
+
+hamburger.addEventListener('click', () => {
+    const nav = document.querySelector('.nav__list--js')
+    nav.classList.toggle('nav__list--open')
+})
