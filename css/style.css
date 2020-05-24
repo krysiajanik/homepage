@@ -239,7 +239,7 @@
     max-height: 36px;
 }
 
-@media screen and (min-width: 426px) {
+@media screen and (min-width: 480px) {
     .about {
         display: flex;
         flex-direction: row;
@@ -248,6 +248,7 @@
     .about__flex{
         align-self: baseline;
     }
+
 
     .body {
         padding: 0 16px;
@@ -369,6 +370,10 @@
     .about__paragraph {
         padding: 0 8px 8px 8px;
         margin: 0;
+    }
+    .body {
+        max-width: 1600px;
+        padding: 0 48px;
     }
     .box {
         box-shadow: 0.5em 0.5em 0.8em #665566;
