@@ -4,8 +4,8 @@
     background: #f3f0f3;
     box-sizing: border-box;
     display: block;
-    margin: 0;
-    padding: 0;
+    margin: 0 auto;
+    padding: 0 auto;
 }
 
 .about {
@@ -61,26 +61,27 @@
 
 .homework-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr) minmax(250px, 1fr);
-    grid-column-gap: 16px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 2px;
 }
 
 .homework-grid__element {
     border: 0.3rem double #665566;
     border-radius: 8px;
     box-shadow: 0.1em 0.1em 1em #aaa0aa;
-    margin: 16px;
-    padding: 16px;
+    margin: 8px;
+    padding: 8px;
 }
 
 .homework-grid__element--title {
     grid-column-start: 1;
-    grid-column-end: 4;
+    grid-column-end: 3;
 }
 
 .img {
-    min-width: 250px;
+    min-width: 200px;
     margin: 0 auto;
+    max-width: 95%;
 }
 
 .img--main {
@@ -99,6 +100,7 @@
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 300;
     min-width: 240px;
+    max-width: 100%;
     margin: 0 auto;
     padding: 0 16px 16px 16px;
 }
@@ -114,8 +116,8 @@
 
 .memes-page {
     margin: auto;
-    padding: 16px;
-    max-width: 960px;
+    padding: 8px;
+    max-width: 420px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -124,13 +126,12 @@
 .memes__day {
     background: white;
     padding: 8px;
-    margin: 0px 0px;
+    margin: 16px 0;
     border-radius: 8px;
-
     box-shadow: 0.1em 0.1em 0.8em #665566;
 }
 .memes__day--width {
-    width: 664px;
+    max-width: 100%;
 }
 .memes__day--main {
     min-width: 240px;
@@ -222,6 +223,21 @@
         margin: 0 32 32 32;
         padding: 32px;
     }
+    .homework-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr) minmax(250px, 1fr);
+        grid-column-gap: 16px;
+    }
+    
+    .homework-grid__element {
+        margin: 16px;
+        padding: 16px;
+    }
+    
+    .homework-grid__element--title {
+        grid-column-start: 1;
+        grid-column-end: 4;
+    }
 
     .img {
         max-width: 600px;
@@ -235,6 +251,9 @@
     .main {
         min-width: 320px;
         padding: 0 24px 16px 16px;
+    }
+    .memes-page {
+        max-width: 660px;
     }
     .memes__day {
         background: white;
@@ -298,5 +317,8 @@
     }
     .grid__main {
         grid-area: main;
+    }
+    .memes__day--width {
+        width: 664px;
     }
 }
