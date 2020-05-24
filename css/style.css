@@ -32,11 +32,6 @@
     width: inherit;
 }
 
-.about__heading {
-    font-weight: 500;
-    padding: 16px;
-    margin: 0;
-}
 
 .about__img {
     padding: 4px 18px;
@@ -64,6 +59,11 @@
 }
 .grid__main {
     grid-area: main;
+}
+
+.h2__heading {
+    font-stretch: expanded;
+    font-weight: 400;
 }
 
 .header {
@@ -103,7 +103,7 @@
     padding: 0 24px 16px 16px;
 }
 
-.memes {
+.box {
     border: 0.3rem outset #aaa0aa;
     border-radius: 8px;
     box-shadow: 0.5em 0.5em 0.8em #665566;
@@ -142,10 +142,6 @@
     font-size: 24px;
 }
 
-.memes__heading {
-    font-stretch: expanded;
-    font-weight: 400;
-}
 
 .nav__item {
     list-style: none;
@@ -170,14 +166,6 @@
     color: white;
 }
 
-.notes {
-    border: 0.3rem outset #aaa0aa;
-    border-radius: 8px;
-    box-shadow: 0.5em 0.5em 0.8em #665566;
-    margin: 16px;
-    padding: 16px;
-    background-color: white;
-}
 
 .notes__day {
     padding: 0 16px;
@@ -193,10 +181,6 @@
     padding: 0 8px;
 }
 
-.notes__heading {
-    font-stretch: expanded;
-    font-weight: 400;
-}
 
 .notes__subheading {
     margin-top: 48px;
