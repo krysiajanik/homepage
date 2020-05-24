@@ -9,7 +9,7 @@ const hello = (name, age) => {
     return console.log(`psst, żeby się przywitać wpisz: sayHello("TwojeImię", TwójWiek) i wciśnij enter:)`);
 };
 
-let helloKrysia = hello("Krysia", 26)
+let helloKrysia = hello("Krysia", 26);
 
 
 const sayHello = (name, age) => {
@@ -18,9 +18,16 @@ const sayHello = (name, age) => {
 };
 
 
-const hamburger = document.querySelector('.hamburger--js')
+const hamburger = document.querySelector('.hamburger--js');
 
 hamburger.addEventListener('click', () => {
-    const nav = document.querySelector('.nav__list--js')
-    nav.classList.toggle('nav__list--open')
+    const nav = document.querySelector('.nav__list--js');
+    nav.classList.toggle('nav__list--open');
+
+    const menuOpen = document.querySelector('.hamburger__svg--js');
+    menuOpen.classList.toggle('hamburger__svg--invisible');
+
+    const menuClose = document.querySelector('.hamburger__close--js');
+    menuClose.classList.toggle('hamburger__close--visible');
+
 })
