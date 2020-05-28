@@ -94,6 +94,12 @@
     padding: 8px;
 }
 
+.homework-grid__element::before {
+    content: "before";
+    color: #665566;
+    
+}
+
 .homework-grid__element--title {
     grid-column-start: 1;
     grid-column-end: 3;
